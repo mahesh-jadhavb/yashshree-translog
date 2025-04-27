@@ -41,13 +41,13 @@ const All = () => {
       <Navbar />
 
       {/* Carousel */}
-      <section className="py-5 bg-light" style={{ marginTop: "3.6rem", backgroundSize:"cover"}}>
+      <section className="py-5 bg-light" style={{ marginTop: "3.6rem", backgroundSize: "cover" }}>
         <div className="carousel-wrapper">
           <Carousel fade controls indicators>
             <Carousel.Item>
-              <img style={{backgroundSize:"cover"}}
+              <img style={{ backgroundSize: "cover" }}
                 className="d-block w-100"
-                src="https://chachataxi.com/wp-content/uploads/2023/04/3644592-scaled.jpg"
+                src="https://www.ashwinicab.com/images/16)%20ONLINE%20CAB%20BOOKING.webp"
                 alt="First slide"
               />
               <Carousel.Caption>
@@ -59,7 +59,7 @@ const All = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://t3.ftcdn.net/jpg/04/32/29/64/360_F_432296462_0rRBBm2f4u22BFa7tvls5d04AApxL8IC.jpg"
+                src="https://media.istockphoto.com/id/182859572/photo/fleet-of-yellow-new-york-city-taxi-cabs-from-above.jpg?s=612x612&w=0&k=20&c=qmN5s8m3GF1NBg1GUYRhI0qFSjHmifCVvVWLjSpR2VE="
                 alt="Second slide"
               />
               <Carousel.Caption>
@@ -71,7 +71,7 @@ const All = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://www.taxinainital.com/wp-content/uploads/2019/03/taxi-cab-service.png"
+                src="https://t3.ftcdn.net/jpg/00/23/65/62/360_F_23656257_V8Sdz7IkGOyZRfkACOvvoSSNQ3umNr1i.jpg"
                 alt="Third slide"
               />
               <Carousel.Caption>
@@ -83,7 +83,7 @@ const All = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://img.freepik.com/premium-vector/car-taxi-transport-images-with-ai-generated_545052-1033.jpg?semt=ais_hybrid&w=740"
+                src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Dzire/11387/1731318279714/front-left-side-47.jpg?impolicy=resize&imwidth=360"
               />
               <Carousel.Caption>
                 <h3 className="hero-title">On-Time Delivery</h3>

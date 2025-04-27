@@ -19,7 +19,7 @@ body {
 /* Base Carousel Style */
 .carousel-item {
     position: relative;
-    height: 80vh;
+    height: 80vh; /* Fixed height for desktop */
     min-height: 400px;
     overflow: hidden;
 }
@@ -27,9 +27,10 @@ body {
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the space properly */
-    object-position: center; /* Keeps the center of the image in view */
+    object-fit: cover; /* Fill the container, maintain aspect ratio */
+    object-position: center; /* Focus center of image */
     filter: brightness(0.5);
+    transition: all 0.3s ease-in-out; /* Smooth resizing */
 }
 
 /* Captions */
@@ -65,8 +66,12 @@ body {
 /* ✅ Mobile Responsiveness */
 @media (max-width: 768px) {
     .carousel-item {
-        height: auto;
+        height: 60vh; /* Reduce height for tablets/mobiles */
         min-height: 300px;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
     }
 
     .carousel-caption {
@@ -75,7 +80,7 @@ body {
 
     .hero-title {
         font-size: 2rem;
-        white-space: normal; /* Ensures long titles break into multiple lines */
+        white-space: normal; /* Allow multiline titles */
     }
 
     .hero-subtitle {
@@ -84,8 +89,13 @@ body {
 }
 
 @media (max-width: 480px) {
+    .carousel-item {
+        height: 50vh; /* Smaller height for small phones */
+        min-height: 250px;
+    }
+
     .carousel-item img {
-        object-fit: contain; /* Adjusts image size for very small screens */
+        object-fit: cover;
     }
 
     .hero-title {
@@ -99,8 +109,6 @@ body {
     }
 }
 
-
-  
 
 /* Section Title Styling */
 .section-title {
