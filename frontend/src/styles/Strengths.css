@@ -1,0 +1,158 @@
+/* General Card Styling */
+/* Our Strengths background */
+.our-strengths-section {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+
+.why-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 10px; /* Slightly rounded corners */
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333; /* Default text color */
+}
+
+/* ✅ Updated Simple Hover Effect for Cards */
+.why-card:hover {
+  background-color: #fff8dc; /* Soft light yellow/cream */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+/* Card Heading */
+.why-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.3s ease, font-size 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect on Heading */
+.why-card:hover h5 {
+  color: #e67e22;  /* Soft brand orange */
+}
+
+/* Card Description */
+.why-card p {
+  font-size: 1.2rem;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect on Description */
+.why-card:hover p {
+  color: #666;
+}
+
+/* Card Icons (SVGs) */
+.why-card svg {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect on Icons */
+.why-card:hover svg {
+  color: #ff6600;
+}
+
+/* Flip Animation for Card */
+.why-card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Section Title Styling */
+.section-title {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  animation: fadeInUp 1s ease-out;
+}
+
+.section-title span {
+  color: #fd7e14;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Testimonials Section with Gradient Background */
+.testimonials-section {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  padding: 60px 0;
+}
+
+.testimonials-section .section-title {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.testimonials-section .section-title span {
+  color: #e67e22;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Testimonial Text */
+.testimonial-card p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Client Name */
+.testimonial-card h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fd7e14;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .testimonial-card {
+      padding: 1.5rem;
+  }
+
+  .testimonial-card p {
+      font-size: 1rem;
+  }
+
+  .testimonial-card h6 {
+      font-size: 1rem;
+  }
+
+  .testimonials-section {
+      padding: 40px 0;
+  }
+}
