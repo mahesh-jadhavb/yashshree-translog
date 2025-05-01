@@ -1,0 +1,122 @@
+/* General Spacer for Navbar */
+.spacer {
+  margin-top: 80px; /* Increased space between navbar and the rest of the content */
+}
+
+/* About Section */
+.about-section {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e6f4ff 100%);
+  padding: 80px 0 40px; /* More space at the top to prevent cutting of text */
+  overflow: hidden;
+}
+
+/* About Title */
+.about-title {
+  text-align: center; /* Center the text */
+  font-size: 3rem;    /* Increase the font size */
+  font-weight: bold;  /* Make the text bold */
+  color: #0d6efd;
+  text-shadow: 0 2px 4px rgba(13, 110, 253, 0.1);
+  margin-bottom: 30px; /* Space below title */
+  animation: slideFadeIn 0.6s ease-in-out;
+}
+
+/* Image Styling */
+.about-img {
+  width: 100%;
+  height: 600px; /* Larger height for the image */
+  object-fit: cover; /* Ensure the image fills the area without stretching */
+  border-radius: 15px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-img-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 30px; /* Ensure there's space between text and image */
+  margin-bottom: 30px; /* Space below the image */
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 32px 64px -12px rgba(13, 110, 253, 0.2);
+}
+
+/* Content Wrapper */
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* Centered Icon Section */
+.feature-icon {
+  width: 100px; /* Set width and height to ensure consistency */
+  height: 100px;
+  background: rgba(13, 110, 253, 0.1);
+  border-radius: 50%; /* Circular icon container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px; /* Center horizontally and add space below */
+  transition: transform 0.3s ease, background 0.3s ease; /* Smooth hover effect */
+}
+
+.feature-icon:hover {
+  transform: scale(1.1); /* Slight scale-up effect on hover */
+  background: rgba(13, 110, 253, 0.2); /* Change background color on hover */
+}
+
+/* Feature Text */
+.feature-text {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .about-img {
+    height: 450px; /* Adjust image size for medium screens */
+  }
+
+  .feature-icon {
+    width: 80px; /* Adjust icon size for medium screens */
+    height: 80px;
+  }
+
+  .feature-text {
+    font-size: 1.1rem; /* Slightly smaller text for medium screens */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-title {
+    font-size: 2rem; /* Adjust title size for small screens */
+  }
+
+  .about-img {
+    height: 400px; /* Further reduce image size for small screens */
+  }
+
+  .feature-icon {
+    width: 70px; /* Adjust icon size for small screens */
+    height: 70px;
+  }
+
+  .feature-text {
+    font-size: 1rem; /* Adjust text size for small screens */
+  }
+}

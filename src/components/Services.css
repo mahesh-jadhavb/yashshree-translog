@@ -1,0 +1,167 @@
+/* Service Page Background */
+.service-page {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  padding: 40px 20px; /* Padding added for space around content */
+}
+
+/* Service Card */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #bcef6a;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+}
+
+/* Service Card Hover Effect */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon {
+  color: white;
+  font-size: 30px;
+}
+
+/* Service Card Colors */
+.service-card:nth-child(1) {
+  background-color: #e6f7ff;
+}
+
+.service-card:nth-child(2) {
+  background-color: #f7e6e6;
+}
+
+.service-card:nth-child(3) {
+  background-color: #e6ffe6;
+}
+
+.service-card:nth-child(4) {
+  background-color: #fff0e6;
+}
+
+.service-card:nth-child(5) {
+  background-color: #e6ffe6;
+}
+
+.service-card:nth-child(6) {
+  background-color: #f7e6ff;
+}
+
+/* Service Card Text */
+.service-card h5 {
+  color: #333;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #666;
+}
+
+/* Service Image */
+.service-image {
+  width: 50%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  transform: perspective(1000px) rotateY(-5deg);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover Effect for Service Image */
+.service-image:hover {
+  transform: perspective(1000px) rotateY(0deg);
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 991.98px) {
+  /* Adjust Service Cards */
+  .service-card {
+    width: 100%; /* Full width for smaller screens */
+    margin: 10px 0; /* Reduced margins */
+  }
+
+  .service-image {
+    width: 100%; /* Full width for images */
+    max-height: 300px; /* Adjust max height */
+  }
+
+  /* Service Text Adjustments */
+  .service-card h5 {
+    font-size: 1.5rem; /* Smaller title */
+  }
+
+  .service-card p {
+    font-size: 1rem; /* Adjust paragraph text */
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 767.98px) {
+  /* Adjust Service Cards */
+  .service-card {
+    padding: 15px; /* Less padding for smaller screens */
+  }
+
+  .service-image {
+    width: 100%; /* Ensure images are full width */
+    max-height: 250px; /* Further reduce height for mobile */
+  }
+
+  /* Icon Circle */
+  .icon-circle {
+    width: 50px; /* Smaller icon circle */
+    height: 50px;
+  }
+
+  .icon {
+    font-size: 25px; /* Smaller icon size */
+  }
+
+  /* Service Card Text Adjustments */
+  .service-card h5 {
+    font-size: 1.25rem; /* Smaller title on mobile */
+  }
+
+  .service-card p {
+    font-size: 0.9rem; /* Smaller paragraph text */
+  }
+}
+
+/* Extra Small Screens (Very Small Devices) */
+@media (max-width: 480px) {
+  /* Adjust Service Cards */
+  .service-card {
+    padding: 10px; /* Less padding */
+    margin: 10px 0; /* Margin adjustment */
+  }
+
+  /* Adjust Font Sizes */
+  .service-card h5 {
+    font-size: 1.1rem; /* Smaller title */
+  }
+
+  .service-card p {
+    font-size: 0.85rem; /* Smaller paragraph text */
+  }
+}

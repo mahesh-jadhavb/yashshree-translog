@@ -1,0 +1,27 @@
+.contact-hero {
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact-form-section {
+  background-color: #f8f9fa;
+}
+
+.contact-page input,
+.contact-page textarea {
+  border-radius: 0.5rem;
+  border: 1px solid #ced4da;
+}
+
+.contact-page .btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.contact-page .btn-primary:hover {
+  background-color: #0056b3;
+}
