@@ -36,7 +36,7 @@ const Safety = () => {
 
       {/* Text Column */}
       <div className="col-lg-6 text-start" data-aos="fade-left">
-        <h2 className="mb-4" style={{ fontSize: '3rem', color: "#0d6efd", fontWeight: 'bold' }}>
+        <h2 className="mb-4" style={{ fontSize: '2rem', color: "#0d6efd", fontWeight: 'bold' }}>
           Our Safety Commitment
         </h2>
         <p className="lead" style={{ fontSize: '1.2rem' }}>
