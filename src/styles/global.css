@@ -16,123 +16,118 @@ body {
     background-color: rgb(41, 128, 185);
 }
 
-/* Base Carousel Style */
+/* Carousel Container Styling */
 .carousel-item {
     position: relative;
-    height: 80vh; /* Increase height to 90% of the viewport height for better image display */
-    min-height: 500px; /* Set a minimum height for smaller screens */
+    height: 100vh;
+    min-height: 500px;
     overflow: hidden;
-}
-
-.carousel-item img {
+  }
+  
+  .carousel-item-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure images fill the container while maintaining aspect ratio */
-    object-position: center; /* Focus center of image */
+    object-fit: cover;
+    object-position: center;
     filter: brightness(0.5);
-    transition: all 0.3s ease-in-out; /* Smooth resizing */
-}
-
-/* Captions */
-.carousel-caption {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Centered Caption Styling */
+  .custom-caption {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 10;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
     width: 100%;
     padding: 0 15px;
-}
-
-/* Headings */
-.hero-title {
-    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .hero-title {
+    font-size: 4.2rem;
     font-weight: 700;
     color: #fff;
-    white-space: nowrap;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.hero-subtitle {
-    font-size: 1.25rem;
+    white-space: normal;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 2.25rem;
     font-weight: 400;
-    margin-top: 0.5rem;
     color: #f0f0f0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
-/* Carousel Control Arrows (Prev/Next) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+  }
+  
+  /* Arrows */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% 100%;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    border: 2px solid #fff; /* White border to make the arrows more distinct */
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    background-color: #e67e22; /* Darker shade on hover */
-    border-color: #f39c12;
-}
-
-/* Ensure arrows are visible on small screens */
-@media (max-width: 768px) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-/* ✅ Mobile Responsiveness */
-@media (max-width: 768px) {
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Indicators */
+  .carousel-indicators [data-bs-target] {
+    background-color: #fff;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #f39c12;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
     .carousel-item {
-        height: 70vh; /* Slightly reduce height for tablets */
-        min-height: 350px;
+      height: 70vh;
+      min-height: 350px;
     }
-
-    .carousel-item img {
-        object-fit: cover;
-    }
-
-    .carousel-caption {
-        padding: 0 10px;
-    }
-
+  
     .hero-title {
-        font-size: 2rem;
-        white-space: normal; /* Allow multiline titles */
+      font-size: 2rem;
     }
-
+  
     .hero-subtitle {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .carousel-item {
-        height: 60vh; /* Smaller height for small phones */
-        min-height: 250px;
+      height: 60vh;
+      min-height: 250px;
     }
-
-    .carousel-item img {
-        object-fit: cover;
-    }
-
+  
     .hero-title {
-        font-size: 1.5rem;
-        padding: 0 10px;
+      font-size: 1.5rem;
     }
-
+  
     .hero-subtitle {
-        font-size: 0.9rem;
-        padding: 0 10px;
+      font-size: 0.9rem;
     }
-}
-
+  }
+  
 
 /* Why Choose Us Section */
 /* Why Choose Us Section */

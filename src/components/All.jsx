@@ -50,46 +50,54 @@ const All = () => {
       {/* Navbar */}
       <Navbar />
 
-      {/* carousel */}
       <Carousel
-        controls={true}
-        indicators={true}
-        interval={5000}  // Auto slide change every 5 seconds
-        ride="carousel"  // Enable auto sliding on load
-        pause="false"   // Disable pause on hover, it will continue sliding even when hovered
-      >
-        <Carousel.Item>
-          <img className="d-block w-100" src={img1} alt="First slide" />
-          <Carousel.Caption>
-            <h3 className="hero-title">Premium Transport Solutions</h3>
-            <p className="hero-subtitle">Safe • Reliable • Pan India</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+  controls={true}
+  indicators={true}
+  interval={5000}
+  ride="carousel"
+  pause={false}
+  fade={false}
+>
+  <Carousel.Item>
+    <div className="carousel-item-wrapper">
+      <img className="d-block w-100" src={img1} alt="First slide" />
+      <div className="carousel-caption custom-caption">
+        <h3 className="hero-title">Premium Transport Solutions</h3>
+        <p className="hero-subtitle">Safe • Reliable • Pan India</p>
+      </div>
+    </div>
+  </Carousel.Item>
 
-        <Carousel.Item>
-          <img className="d-block w-100" src={img2} alt="Second slide" />
-          <Carousel.Caption>
-            <h3 className="hero-title">Efficient Fleet Management</h3>
-            <p className="hero-subtitle">Manage your fleet with ease and efficiency.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+  <Carousel.Item>
+    <div className="carousel-item-wrapper">
+      <img className="d-block w-100" src={img2} alt="Second slide" />
+      <div className="carousel-caption custom-caption">
+        <h3 className="hero-title">Efficient Fleet Management</h3>
+        <p className="hero-subtitle">Manage your fleet with ease and efficiency.</p>
+      </div>
+    </div>
+  </Carousel.Item>
 
-        <Carousel.Item>
-          <img className="d-block w-100" src={img3} alt="Third slide" />
-          <Carousel.Caption>
-            <h3 className="hero-title">Real-Time Tracking</h3>
-            <p className="hero-subtitle">Track your deliveries in real-time for full transparency.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+  <Carousel.Item>
+    <div className="carousel-item-wrapper">
+      <img className="d-block w-100" src={img3} alt="Third slide" />
+      <div className="carousel-caption custom-caption">
+        <h3 className="hero-title">Real-Time Tracking</h3>
+        <p className="hero-subtitle">Track your deliveries in real-time for full transparency.</p>
+      </div>
+    </div>
+  </Carousel.Item>
 
-        <Carousel.Item>
-          <img className="d-block w-100" src={img4} alt="Fourth slide" />
-          <Carousel.Caption>
-            <h3 className="hero-title">On-Time Delivery</h3>
-            <p className="hero-subtitle">Your goods delivered safely and on time, every time.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+  <Carousel.Item>
+    <div className="carousel-item-wrapper">
+      <img className="d-block w-100" src={img4} alt="Fourth slide" />
+      <div className="carousel-caption custom-caption">
+        <h3 className="hero-title">On-Time Delivery</h3>
+        <p className="hero-subtitle">Your goods delivered safely and on time, every time.</p>
+      </div>
+    </div>
+  </Carousel.Item>
+</Carousel>
 
       {/* About Preview */}
       <section className="py-5 about-preview-section">
