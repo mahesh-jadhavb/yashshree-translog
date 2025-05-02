@@ -75,7 +75,7 @@ const Service = () => {
 
               {/* Content Column */}
               <div className="col-lg-6" data-aos="fade-left">
-                <h2 className="service-title mb-4" style={{ fontSize: '5rem', color:"#0d6efd" }}>Our Services</h2> {/* Increased heading size */}
+                <h2 className="service-title mb-4" style={{ fontSize: '2.5rem', color:"#0d6efd" }}>Our Services</h2> {/* Increased heading size */}
                 <p className="lead">
                   Explore a variety of services that cater to all your transportation needs. Whether it's a quick trip or a long haul, we've got you covered.
                 </p>
