@@ -73,21 +73,6 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   }
   
-  /* Arrows */
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    background-size: 100% 100%;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .carousel-control-prev-icon:hover,
-  .carousel-control-next-icon:hover {
-    background-color: #e67e22;
-  }
-  
   /* Indicators */
   .carousel-indicators [data-bs-target] {
     background-color: #fff;
