@@ -46,16 +46,14 @@
 
 /* Social media icons */
 .social-icon {
-  font-size: 1.5rem;
-  color: #ffffff;
-  transition: transform 0.3s ease, color 0.3s ease;
-  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .social-icon:hover {
-  color: #f1c40f;
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.1);
+  background-color: #f0f0f0;
 }
+
 
 /* Responsive tweaks */
 @media (max-width: 768px) {

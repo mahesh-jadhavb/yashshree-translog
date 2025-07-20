@@ -248,6 +248,11 @@ const All = () => {
                 src: "https://www.newshubasia.com/wp-content/uploads/2023/02/Logo-all-original-files.png",
                 alt: "Client 4",
                 delay: "0.6s"
+              },
+              {
+                src: "https://www.data-axle.com/wp-content/uploads/2020/09/data_axle_horizontal_black_blue_crop.svg",
+                alt: "Client 4",
+                delay: "0.8s"
               }
             ].map((client, idx) => (
               <Col xs={6} md={3} key={idx}>

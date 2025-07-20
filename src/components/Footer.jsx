@@ -72,17 +72,38 @@ const Footer = () => {
               <FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" />
               Office No: C-310, Westeria Fortune, Bhumkar Chowk, Pimpri Chinchwad, Pune - 411057, Maharashtra
             </p>
-            <div className="social-icons mt-3">
-              <a href="#" className="social-icon" aria-label="Facebook">
-                <FontAwesomeIcon icon={faFacebook} className="me-3" />
-              </a>
-              <a href="#" className="social-icon" aria-label="Instagram">
-                <FontAwesomeIcon icon={faInstagram} className="me-3" />
-              </a>
-              <a href="#" className="social-icon" aria-label="LinkedIn">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </div>
+            <div className="social-icons mt-3 d-flex gap-3">
+  <button
+    type="button"
+    className="social-icon btn btn-light rounded-circle p-3 shadow"
+    onClick={(e) => {
+      e.preventDefault();
+      console.log("✅ Facebook clicked");
+      window.open(
+        "https://www.facebook.com/share/1VNPpEftMu/",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }}
+  >
+    <FontAwesomeIcon icon={faFacebook} style={{ color: '#1877F2', fontSize: '1.5rem' }} />
+  </button>
+
+  <button
+    type="button"
+    className="social-icon btn btn-light rounded-circle p-3 shadow"
+    onClick={() =>
+      window.open(
+        "https://www.instagram.com/yashashreetranslog/profilecard/?igsh=ZXFuNW1jN2Znamdq",
+        "_blank",
+        "noopener,noreferrer"
+      )
+    }
+  >
+    <FontAwesomeIcon icon={faInstagram} style={{ color: '#E1306C', fontSize: '1.5rem' }} />
+  </button>
+</div>
+
           </Col>
         </Row>
 
