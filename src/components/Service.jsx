@@ -126,7 +126,7 @@ const Service = () => {
               Take your business or journey to the next level with our expert solutions.
               Let's work together to build your success!
             </p>
-            <a href="/contact" className="btn btn-light btn-lg mt-4">Contact Us</a>
+            <Link to="/contact" className="btn btn-light btn-lg mt-4">Contact Us</Link>
           </div>
         </section>
 
